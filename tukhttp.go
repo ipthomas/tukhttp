@@ -9,9 +9,8 @@ import (
 	"strings"
 	"time"
 
-	util "github.com/ipthomas/tukutil"
-
 	cnst "github.com/ipthomas/tukcnst"
+	util "github.com/ipthomas/tukutil"
 )
 
 type PIXmRequest struct {

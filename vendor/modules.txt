@@ -4,6 +4,6 @@ github.com/google/uuid
 # github.com/ipthomas/tukcnst v1.0.5
 ## explicit; go 1.19
 github.com/ipthomas/tukcnst
-# github.com/ipthomas/tukutil v1.0.5
+# github.com/ipthomas/tukutil v1.0.6
 ## explicit; go 1.19
 github.com/ipthomas/tukutil

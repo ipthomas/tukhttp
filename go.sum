@@ -4,6 +4,8 @@ github.com/ipthomas/tukcnst v1.0.3 h1:y8SauA7d8skNLu25ZI27zJzWxsF0e9b1HDywcPHmda
 github.com/ipthomas/tukcnst v1.0.3/go.mod h1:ciOdJbw8hryjilsWjN0vhtF3ZbSfEKUd7wfzU0IZ2X8=
 github.com/ipthomas/tukcnst v1.0.5 h1:wxH9Xy42IZm1brPLRXKug1dYRSgDPFDWJuV6OmhXoSs=
 github.com/ipthomas/tukcnst v1.0.5/go.mod h1:ciOdJbw8hryjilsWjN0vhtF3ZbSfEKUd7wfzU0IZ2X8=
+github.com/ipthomas/tukcnst v1.0.10 h1:ot7Swc+dvB7zwoU42n56OmjoDq8xtvpHhQSOXtwG1sM=
+github.com/ipthomas/tukcnst v1.0.10/go.mod h1:ciOdJbw8hryjilsWjN0vhtF3ZbSfEKUd7wfzU0IZ2X8=
 github.com/ipthomas/tukutil v0.0.0-20220905174237-c8511de5bdec h1:lah/uRAEFwosQj5w+kPMWjB501hiiiuGgo4Ndrg1db4=
 github.com/ipthomas/tukutil v0.0.0-20220905174237-c8511de5bdec/go.mod h1:SRe4O0j2q9fnpN1W9d077JmHv4OiOHaXT2D6dUKBdBU=
 github.com/ipthomas/tukutil v0.0.0-20220912190241-6f399bf71d4b h1:U70cQBlicj+b7srKsV3y0WYx7iv7jjUxhjPq90SP4cI=
@@ -12,3 +14,5 @@ github.com/ipthomas/tukutil v1.0.5 h1:aGS8wuS/8HuQZYnPkVUmZ77szonr+sI8QBXqSTtYou
 github.com/ipthomas/tukutil v1.0.5/go.mod h1:a7z9BhMk/h6K0jqEL6NTJePNB/tYR5SH74GkaiiP0q8=
 github.com/ipthomas/tukutil v1.0.6 h1:UB100/G7weRUNUNEUqjIhMpiS9KER7DvaNbJtM0vhps=
 github.com/ipthomas/tukutil v1.0.6/go.mod h1:5t75VCM6PDN+Oj7GEhP0xQrQouGDotV7Nc8Kn1l8thw=
+github.com/ipthomas/tukutil v1.0.10 h1:9wVHnyzERsTLhzz0Ob5HDoXFYzAH49ulw9iWeZSo3TA=
+github.com/ipthomas/tukutil v1.0.10/go.mod h1:O3bE0LCck8gtABMNprLwNRtfrFh7n0ewMfYioxsj6PQ=

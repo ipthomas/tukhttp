@@ -1,9 +1,9 @@
 # github.com/google/uuid v1.3.0
 ## explicit
 github.com/google/uuid
-# github.com/ipthomas/tukcnst v1.2.0
+# github.com/ipthomas/tukcnst v1.2.3
 ## explicit; go 1.19
 github.com/ipthomas/tukcnst
-# github.com/ipthomas/tukutil v1.2.0
+# github.com/ipthomas/tukutil v1.2.1
 ## explicit; go 1.19
 github.com/ipthomas/tukutil

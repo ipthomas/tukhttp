@@ -15,12 +15,12 @@ import (
 )
 
 type CGLRequest struct {
-	URL           string
-	X_API_Request string
-	NHS_number    string
-	CGL_User      CGL_User
-	StatusCode    int
-	Response      []byte
+	URL        string
+	X_Api_Key  string
+	NHS_number string
+	CGL_User   CGL_User
+	StatusCode int
+	Response   []byte
 }
 type CGL_User struct {
 	Data struct {
@@ -289,10 +289,8 @@ func (i *PIXmRequest) newRequest() error {
 func (i *CGLRequest) newRequest() error {
 	i.URL = i.URL + "/user?NHS_number=" + i.NHS_number
 	req, _ := http.NewRequest(cnst.HTTP_GET, i.URL, nil)
-	req.Header.Set(cnst.CONTENT_TYPE, cnst.APPLICATION_JSON)
-	req.Header.Set(cnst.ACCEPT, cnst.ALL)
-	req.Header.Set(cnst.CONNECTION, cnst.KEEP_ALIVE)
-	req.Header.Set("X-API-KEY", i.X_API_Request)
+	req.Header.Set(cnst.ACCEPT, cnst.APPLICATION_JSON)
+	req.Header.Set("X-API-KEY", i.X_Api_Key)
 	i.logRequest(req.Header)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(5)*time.Second)
 	defer cancel()

@@ -352,7 +352,7 @@ func (i *PIXmRequest) logRequest(headers http.Header) {
 func (i *CGLRequest) logRequest(headers http.Header) {
 	log.Println("HTTP GET Request Headers")
 	util.Log(headers)
-	log.Printf("HTTP Request\nURL = %s\nTimeout = %v", i.Request, 5)
+	log.Printf("HTTP Request\nURL = %s - Timeout = %v", i.Request, 5)
 }
 func (i *PIXmRequest) logResponse() {
 	log.Printf("HTML Response - Status Code = %v\n%s", i.StatusCode, string(i.Response))

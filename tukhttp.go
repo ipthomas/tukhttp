@@ -14,15 +14,15 @@ import (
 	util "github.com/ipthomas/tukutil"
 )
 
-type CGIRequest struct {
+type CGLRequest struct {
 	URL           string
 	X_API_Request string
 	NHS_number    string
-	CGI_User      CGI_User
+	CGL_User      CGL_User
 	StatusCode    int
 	Response      []byte
 }
-type CGI_User struct {
+type CGL_User struct {
 	Data struct {
 		Client struct {
 			BasicDetails struct {
@@ -286,13 +286,13 @@ func (i *PIXmRequest) newRequest() error {
 	i.logResponse()
 	return err
 }
-func (i *CGIRequest) newRequest() error {
+func (i *CGLRequest) newRequest() error {
 	i.URL = i.URL + "/user?NHS_number=" + i.NHS_number
 	req, _ := http.NewRequest(cnst.HTTP_GET, i.URL, nil)
 	req.Header.Set(cnst.CONTENT_TYPE, cnst.APPLICATION_JSON)
 	req.Header.Set(cnst.ACCEPT, cnst.ALL)
 	req.Header.Set(cnst.CONNECTION, cnst.KEEP_ALIVE)
-	req.Header.Set("Authorize", i.X_API_Request)
+	req.Header.Set("X-API-KEY", i.X_API_Request)
 	i.logRequest(req.Header)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Duration(5)*time.Second)
 	defer cancel()
@@ -303,7 +303,7 @@ func (i *CGIRequest) newRequest() error {
 	i.StatusCode = resp.StatusCode
 	i.Response, err = io.ReadAll(resp.Body)
 	defer resp.Body.Close()
-	json.Unmarshal(i.Response, &i.CGI_User)
+	json.Unmarshal(i.Response, &i.CGL_User)
 	i.logResponse()
 	return err
 }
@@ -353,7 +353,7 @@ func (i *PIXmRequest) logRequest(headers http.Header) {
 	util.Log(headers)
 	log.Printf("HTTP Request\nURL = %s\nTimeout = %v", i.URL, i.Timeout)
 }
-func (i *CGIRequest) logRequest(headers http.Header) {
+func (i *CGLRequest) logRequest(headers http.Header) {
 	log.Println("HTTP GET Request Headers")
 	util.Log(headers)
 	log.Printf("HTTP Request\nURL = %s\nTimeout = %v", i.URL, 5)
@@ -361,6 +361,6 @@ func (i *CGIRequest) logRequest(headers http.Header) {
 func (i *PIXmRequest) logResponse() {
 	log.Printf("HTML Response - Status Code = %v\n%s", i.StatusCode, string(i.Response))
 }
-func (i *CGIRequest) logResponse() {
+func (i *CGLRequest) logResponse() {
 	log.Printf("HTML Response - Status Code = %v\n%s", i.StatusCode, string(i.Response))
 }

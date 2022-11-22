@@ -1,6 +1,6 @@
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
-github.com/ipthomas/tukcnst v1.3.2 h1:dKcHANwgKttE1sSHuGDuRcZdFEJ+7jx9MJd/88aPh20=
-github.com/ipthomas/tukcnst v1.3.2/go.mod h1:ciOdJbw8hryjilsWjN0vhtF3ZbSfEKUd7wfzU0IZ2X8=
-github.com/ipthomas/tukutil v1.3.2 h1:s/lUybLoFDWguq0sAl//uF77Zfk8G+siFYKArG2V2wk=
-github.com/ipthomas/tukutil v1.3.2/go.mod h1:209PlHN55ZDIu5b+qbueJAfPr/COBanhJ0/TCbCqw0g=
+github.com/ipthomas/tukcnst v1.3.3 h1:DCjCAAlCvAX0sWHv/SBPDuuvIV9YS7wnJrBkH4pt3zs=
+github.com/ipthomas/tukcnst v1.3.3/go.mod h1:ciOdJbw8hryjilsWjN0vhtF3ZbSfEKUd7wfzU0IZ2X8=
+github.com/ipthomas/tukutil v1.3.3 h1:g/hteLypDvPGsB6VoBwe1Vs+H7dPbonNRwnJtHTLeYc=
+github.com/ipthomas/tukutil v1.3.3/go.mod h1:cgLt0kO9rA3cobp265FHdAYhDUAeeAE1VaJK2KMy28c=

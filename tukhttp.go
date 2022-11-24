@@ -13,6 +13,8 @@ import (
 	"github.com/ipthomas/tukutil"
 )
 
+var DebugMode = true
+
 type CGLRequest struct {
 	Request    string
 	X_Api_Key  string

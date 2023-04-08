@@ -12,3 +12,5 @@ github.com/ipthomas/tukutil v1.3.8 h1:B638EKGNuVekHT1aABI53lNTyVtMZXOJC7ouTpUI+t
 github.com/ipthomas/tukutil v1.3.8/go.mod h1:fOnuj36dTQReAAgAORW0ulT8dA/CoiVW+qbHjbW6dPI=
 github.com/ipthomas/tukutil v1.3.9 h1:HXT4QvBTkgzqLGasLZ0TuUBWKz0fMX5QRtauv9Qiry0=
 github.com/ipthomas/tukutil v1.3.9/go.mod h1:jFcgJ2+neQwVUWgP2ACVgCExi+XDeK7a4NRzMOFhGI8=
+github.com/ipthomas/tukutil v1.3.10 h1:mf0ZQv+gv6BuxKqL7L+yjxhy5IYCGlOXAEvgQAq/Ko8=
+github.com/ipthomas/tukutil v1.3.10/go.mod h1:jFcgJ2+neQwVUWgP2ACVgCExi+XDeK7a4NRzMOFhGI8=

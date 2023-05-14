@@ -80,8 +80,8 @@ type TukHTTPInterface interface {
 
 var debugMode bool = false
 
-func SetDebugMode() {
-	debugMode = true
+func SetDebugMode(debug bool) {
+	debugMode = debug
 }
 func NewRequest(i TukHTTPInterface) error {
 	return i.newRequest()

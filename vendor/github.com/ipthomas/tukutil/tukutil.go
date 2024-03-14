@@ -20,6 +20,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/ipthomas/tukcnst"
+	"github.com/jrivets/log4g"
 )
 
 var (
@@ -180,9 +181,10 @@ func MonitorApp() {
 
 // Log takes any struc as input and logs out the struc as a json string
 func Log(i interface{}) {
+	stl := log4g.GetLogger("2T-UIS")
 	if debugMode {
 		b, _ := json.MarshalIndent(i, "", "  ")
-		log.Println(string(b))
+		stl.Debug(string(b))
 	}
 }
 

@@ -7,3 +7,11 @@ github.com/ipthomas/tukcnst
 # github.com/ipthomas/tukutil v1.3.14
 ## explicit; go 1.19
 github.com/ipthomas/tukutil
+# github.com/jrivets/gorivets v0.0.0-20191016233429-669d3f1acfa1
+## explicit
+github.com/jrivets/gorivets
+# github.com/jrivets/log4g v0.0.0-20191016233753-c02c5046dc98
+## explicit
+github.com/jrivets/log4g
+# gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
+## explicit; go 1.11
